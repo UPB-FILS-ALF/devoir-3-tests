@@ -1,0 +1,92 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "n",
+                    "line": 3
+                }
+            ],
+            "line": 3
+        },
+        {
+            "id": "IfBranch",
+            "exp": {
+                "id": "Expression",
+                "op": ">",
+                "left": {
+                    "id": "Variable",
+                    "title": "n",
+                    "line": 5
+                },
+                "right": {
+                    "id": "Value",
+                    "type": "integer",
+                    "value": 2,
+                    "line": 5
+                },
+                "line": 5
+            },
+            "then": [
+                {
+                    "id": "Assign",
+                    "to": {
+                        "id": "Variable",
+                        "title": "n",
+                        "line": 6
+                    },
+                    "from": {
+                        "id": "Expression",
+                        "op": "+",
+                        "left": {
+                            "id": "Variable",
+                            "title": "n",
+                            "line": 6
+                        },
+                        "right": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 1,
+                            "line": 6
+                        },
+                        "line": 6
+                    },
+                    "line": 6
+                }
+            ],
+            "else_then": [
+                {
+                    "id": "Assign",
+                    "to": {
+                        "id": "Variable",
+                        "title": "n",
+                        "line": 8
+                    },
+                    "from": {
+                        "id": "Expression",
+                        "op": "*",
+                        "left": {
+                            "id": "Variable",
+                            "title": "n",
+                            "line": 8
+                        },
+                        "right": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 1,
+                            "line": 8
+                        },
+                        "line": 8
+                    },
+                    "line": 8
+                }
+            ],
+            "line": 9
+        }
+    ],
+    "line": 9
+}

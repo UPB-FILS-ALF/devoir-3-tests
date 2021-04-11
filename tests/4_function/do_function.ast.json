@@ -1,0 +1,23 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionCall",
+            "function_name": "print",
+            "parameters": [
+                {
+                    "id": "FunctionCallParameter",
+                    "name": "text",
+                    "value": {
+                        "id": "Value",
+                        "type": "string",
+                        "value": "text to write",
+                        "line": 3
+                    }
+                }
+            ],
+            "line": 3
+        }
+    ],
+    "line": 3
+}

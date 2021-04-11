@@ -1,0 +1,24 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "auto",
+                    "title": "count",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 5,
+                        "line": 2
+                    },
+                    "line": 2
+                }
+            ],
+            "line": 2
+        }
+    ],
+    "line": 2
+}

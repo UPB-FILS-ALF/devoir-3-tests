@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "empty",
+            "value": "empty",
+            "line": 1
+        }
+    ],
+    "line": 1
+}

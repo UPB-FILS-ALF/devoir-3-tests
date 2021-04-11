@@ -1,0 +1,50 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "sum",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n1"
+                },
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n2"
+                }
+            ],
+            "return_type": "integer",
+            "statements": [
+                {
+                    "id": "Assign",
+                    "to": {
+                        "id": "Variable",
+                        "title": "s",
+                        "line": 5
+                    },
+                    "from": {
+                        "id": "Expression",
+                        "op": "+",
+                        "left": {
+                            "id": "Variable",
+                            "title": "n1",
+                            "line": 5
+                        },
+                        "right": {
+                            "id": "Variable",
+                            "title": "n2",
+                            "line": 5
+                        },
+                        "line": 5
+                    },
+                    "line": 5
+                }
+            ],
+            "line": 6
+        }
+    ],
+    "line": 6
+}

@@ -1,0 +1,21 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "say",
+            "parameters": [],
+            "return_type": "string",
+            "statements": [
+                {
+                    "id": "Value",
+                    "type": "string",
+                    "value": "say",
+                    "line": 3
+                }
+            ],
+            "line": 3
+        }
+    ],
+    "line": 3
+}

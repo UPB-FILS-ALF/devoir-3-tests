@@ -1,0 +1,9 @@
+/* Variable declaration of type */
+
+class school
+	local string name;
+	local boolean private;
+	local integer type;
+end;
+
+declare school s;

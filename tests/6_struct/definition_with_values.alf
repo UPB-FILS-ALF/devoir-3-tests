@@ -1,0 +1,7 @@
+/* Class definition with values */
+
+class school
+	local string name = "Public Elementary School";
+	local boolean private = false;
+	local integer type = 0;
+end;

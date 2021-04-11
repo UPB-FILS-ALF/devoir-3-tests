@@ -1,0 +1,13 @@
+/* Array with class definition */
+
+string array details[1:9];
+
+declare v= details;
+
+class random
+	local integer position;
+end;
+
+declare random s;
+
+v[s.position] = "The new name for the school";

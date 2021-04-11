@@ -1,0 +1,5 @@
+/* Variable value Attribution */
+
+declare integer n;
+
+n = 6;

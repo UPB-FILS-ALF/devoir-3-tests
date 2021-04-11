@@ -1,0 +1,149 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "power",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "a"
+                },
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n"
+                }
+            ],
+            "return_type": "integer",
+            "statements": [
+                {
+                    "id": "Declaration",
+                    "elements": [
+                        {
+                            "id": "DeclarationElement",
+                            "type": "integer",
+                            "title": "p",
+                            "value": {
+                                "id": "Value",
+                                "type": "integer",
+                                "value": 1,
+                                "line": 5
+                            },
+                            "line": 5
+                        }
+                    ],
+                    "line": 5
+                },
+                {
+                    "id": "ForLoop",
+                    "variable": "i",
+                    "from": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 1,
+                        "line": 6
+                    },
+                    "to": {
+                        "id": "Variable",
+                        "title": "n",
+                        "line": 6
+                    },
+                    "statements": [
+                        {
+                            "id": "Assign",
+                            "to": {
+                                "id": "Variable",
+                                "title": "p",
+                                "line": 7
+                            },
+                            "from": {
+                                "id": "Expression",
+                                "op": "*",
+                                "left": {
+                                    "id": "Variable",
+                                    "title": "p",
+                                    "line": 7
+                                },
+                                "right": {
+                                    "id": "Variable",
+                                    "title": "a",
+                                    "line": 7
+                                },
+                                "line": 7
+                            },
+                            "line": 7
+                        }
+                    ],
+                    "line": 8
+                }
+            ],
+            "return_function": {
+                "id": "ReturnFunction",
+                "value": {
+                    "id": "Variable",
+                    "title": "a",
+                    "line": 9
+                },
+                "line": 9
+            },
+            "line": 10
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "auto",
+                    "title": "n",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 0,
+                        "line": 12
+                    },
+                    "line": 12
+                }
+            ],
+            "line": 12
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "Variable",
+                "title": "n",
+                "line": 14
+            },
+            "from": {
+                "id": "FunctionCall",
+                "function_name": "power",
+                "parameters": [
+                    {
+                        "id": "FunctionCallParameter",
+                        "name": "a",
+                        "value": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 6,
+                            "line": 14
+                        }
+                    },
+                    {
+                        "id": "FunctionCallParameter",
+                        "name": "n",
+                        "value": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 5,
+                            "line": 14
+                        }
+                    }
+                ],
+                "line": 14
+            },
+            "line": 14
+        }
+    ],
+    "line": 14
+}

@@ -1,0 +1,10 @@
+/* Access property of class */
+class school
+	local string name;
+	local boolean private;
+	local integer type;
+end;
+
+declare school s;
+
+s.name = "The new name for the school";

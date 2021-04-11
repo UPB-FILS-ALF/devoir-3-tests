@@ -1,0 +1,7 @@
+/* Access element with array item */
+
+string array details[1:9];
+
+declare details v, details p;
+
+v[p[5]] = "The new name for the school";

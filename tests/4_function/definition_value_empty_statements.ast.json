@@ -1,0 +1,36 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "print",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "string",
+                    "name": "text"
+                }
+            ],
+            "return_type": "string",
+            "statements": [
+                {
+                    "id": "Assign",
+                    "to": {
+                        "id": "Variable",
+                        "title": "text",
+                        "line": 5
+                    },
+                    "from": {
+                        "id": "Value",
+                        "type": "string",
+                        "value": "",
+                        "line": 5
+                    },
+                    "line": 5
+                }
+            ],
+            "line": 6
+        }
+    ],
+    "line": 6
+}

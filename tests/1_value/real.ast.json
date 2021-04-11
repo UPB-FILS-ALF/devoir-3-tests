@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "float",
+            "value": 45.5,
+            "line": 1
+        }
+    ],
+    "line": 1
+}

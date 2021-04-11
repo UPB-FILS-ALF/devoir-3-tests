@@ -1,0 +1,81 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Array",
+            "title": "details",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 3
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "auto",
+                    "title": "v",
+                    "value": {
+                        "id": "Variable",
+                        "title": "details",
+                        "line": 5
+                    },
+                    "line": 5
+                }
+            ],
+            "line": 5
+        },
+        {
+            "id": "ClassDefinition",
+            "title": "random",
+            "properties": [
+                {
+                    "id": "LocalProperty",
+                    "type": "integer",
+                    "title": "position",
+                    "line": 8
+                }
+            ],
+            "line": 9
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "random",
+                    "title": "s",
+                    "line": 11
+                }
+            ],
+            "line": 11
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "ArrayElement",
+                "array": "v",
+                "index": {
+                    "id": "ClassProperty",
+                    "object": {
+                        "id": "Variable",
+                        "title": "s",
+                        "line": 13
+                    },
+                    "title": "position",
+                    "line": 13
+                },
+                "line": 13
+            },
+            "from": {
+                "id": "Value",
+                "type": "string",
+                "value": "The new name for the school",
+                "line": 13
+            },
+            "line": 13
+        }
+    ],
+    "line": 13
+}

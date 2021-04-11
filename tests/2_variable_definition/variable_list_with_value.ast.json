@@ -1,0 +1,60 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "n",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 3,
+                        "line": 2
+                    },
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "float",
+                    "title": "r",
+                    "value": {
+                        "id": "Value",
+                        "type": "float",
+                        "value": 3.7,
+                        "line": 2
+                    },
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "boolean",
+                    "title": "l",
+                    "value": {
+                        "id": "Value",
+                        "type": "boolean",
+                        "value": false,
+                        "line": 2
+                    },
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "string",
+                    "title": "s",
+                    "value": {
+                        "id": "Value",
+                        "type": "string",
+                        "value": "string",
+                        "line": 2
+                    },
+                    "line": 2
+                }
+            ],
+            "line": 2
+        }
+    ],
+    "line": 2
+}

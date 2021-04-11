@@ -1,0 +1,43 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "ClassDefinition",
+            "title": "school",
+            "properties": [
+                {
+                    "id": "LocalProperty",
+                    "type": "string",
+                    "title": "name",
+                    "line": 4
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "boolean",
+                    "title": "private",
+                    "line": 5
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "integer",
+                    "title": "type",
+                    "line": 6
+                }
+            ],
+            "line": 7
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "school",
+                    "title": "s",
+                    "line": 9
+                }
+            ],
+            "line": 9
+        }
+    ],
+    "line": 9
+}

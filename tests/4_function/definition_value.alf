@@ -1,0 +1,8 @@
+/* Function definition with statements and value */
+
+
+function sum (integer n1, integer n2):integer
+begin
+	DECLARE integer s = n1 + n2;
+	return s;
+end;

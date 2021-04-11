@@ -1,0 +1,229 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "prime",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n"
+                }
+            ],
+            "return_type": "boolean",
+            "statements": [
+                {
+                    "id": "Declaration",
+                    "elements": [
+                        {
+                            "id": "DeclarationElement",
+                            "type": "boolean",
+                            "title": "p",
+                            "value": {
+                                "id": "Value",
+                                "type": "boolean",
+                                "value": true,
+                                "line": 5
+                            },
+                            "line": 5
+                        }
+                    ],
+                    "line": 5
+                },
+                {
+                    "id": "ForLoop",
+                    "variable": "i",
+                    "from": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 2,
+                        "line": 7
+                    },
+                    "to": {
+                        "id": "FunctionCall",
+                        "function_name": "sqrt",
+                        "parameters": [
+                            {
+                                "id": "FunctionCallParameter",
+                                "value": {
+                                    "id": "Variable",
+                                    "title": "n",
+                                    "line": 7
+                                },
+                                "line": 7
+                            }
+                        ],
+                        "line": 7
+                    },
+                    "statements": [
+                        {
+                            "id": "IfBranch",
+                            "exp": {
+                                "id": "Expression",
+                                "op": "==",
+                                "left": {
+                                    "id": "Expression",
+                                    "op": "%",
+                                    "left": {
+                                        "id": "Variable",
+                                        "title": "n",
+                                        "line": 8
+                                    },
+                                    "right": {
+                                        "id": "Variable",
+                                        "title": "i",
+                                        "line": 8
+                                    },
+                                    "line": 8
+                                },
+                                "right": {
+                                    "id": "Value",
+                                    "type": "integer",
+                                    "value": 0,
+                                    "line": 8
+                                },
+                                "line": 8
+                            },
+                            "then": [
+                                {
+                                    "id": "Assign",
+                                    "to": {
+                                        "id": "Variable",
+                                        "title": "p",
+                                        "line": 9
+                                    },
+                                    "from": {
+                                        "id": "Value",
+                                        "type": "boolean",
+                                        "value": false,
+                                        "line": 9
+                                    },
+                                    "line": 9
+                                }
+                            ],
+                            "line": 10
+                        }
+                    ],
+                    "line": 11
+                }
+            ],
+            "return_function": {
+                "id": "ReturnFunction",
+                "value": {
+                    "id": "Variable",
+                    "title": "p",
+                    "line": 13
+                },
+                "line": 13
+            },
+            "line": 14
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "v",
+                    "line": 16
+                }
+            ],
+            "line": 16
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "Variable",
+                "title": "v",
+                "line": 18
+            },
+            "from": {
+                "id": "FunctionCall",
+                "function_name": "read",
+                "parameters": [],
+                "line": 18
+            },
+            "line": 18
+        },
+        {
+            "id": "IfBranch",
+            "exp": {
+                "id": "FunctionCall",
+                "function_name": "prime",
+                "parameters": [
+                    {
+                        "id": "FunctionCallParameter",
+                        "value": {
+                            "id": "Variable",
+                            "title": "v",
+                            "line": 20
+                        },
+                        "line": 20
+                    }
+                ],
+                "line": 20
+            },
+            "then": [
+                {
+                    "id": "FunctionCall",
+                    "function_name": "write",
+                    "parameters": [
+                        {
+                            "id": "FunctionCallParameter",
+                            "name": "text",
+                            "value": {
+                                "id": "Expression",
+                                "op": "+",
+                                "left": {
+                                    "id": "Variable",
+                                    "title": "v",
+                                    "line": 21
+                                },
+                                "right": {
+                                    "id": "Value",
+                                    "type": "string",
+                                    "value": " is prime",
+                                    "line": 21
+                                },
+                                "line": 21
+                            }
+                        }
+                    ],
+                    "line": 21
+                }
+            ],
+            "else_then": [
+                {
+                    "id": "FunctionCall",
+                    "function_name": "write",
+                    "parameters": [
+                        {
+                            "id": "FunctionCallParameter",
+                            "name": "text",
+                            "value": {
+                                "id": "Expression",
+                                "op": "+",
+                                "left": {
+                                    "id": "Variable",
+                                    "title": "v",
+                                    "line": 23
+                                },
+                                "right": {
+                                    "id": "Value",
+                                    "type": "string",
+                                    "value": " is not prime",
+                                    "line": 23
+                                },
+                                "line": 23
+                            }
+                        }
+                    ],
+                    "line": 23
+                }
+            ],
+            "line": 24
+        }
+    ],
+    "line": 24
+}

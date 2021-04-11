@@ -1,0 +1,46 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "e",
+                    "value": {
+                        "id": "Expression",
+                        "op": "+",
+                        "left": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 20,
+                            "line": 2
+                        },
+                        "right": {
+                            "id": "Expression",
+                            "op": "*",
+                            "left": {
+                                "id": "Value",
+                                "type": "integer",
+                                "value": 3,
+                                "line": 2
+                            },
+                            "right": {
+                                "id": "Value",
+                                "type": "integer",
+                                "value": 5,
+                                "line": 2
+                            },
+                            "line": 2
+                        },
+                        "line": 2
+                    },
+                    "line": 2
+                }
+            ],
+            "line": 2
+        }
+    ],
+    "line": 2
+}

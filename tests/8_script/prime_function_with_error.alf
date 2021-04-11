@@ -1,0 +1,23 @@
+/* Prime function with error */
+
+function prime (integer n):boolean
+begin
+	declare boolean p = true;
+
+	for i from 2 to exec sqrt(integer n) start
+		if n % i == 0 
+			p = false;
+	finish;
+
+	return p;
+end;
+
+declare integer v;
+
+v = exec read();
+
+if exec prime(v) 
+	exec write(text : v+" is prime");
+else
+	exec write(text : v+" is not prime");
+end;

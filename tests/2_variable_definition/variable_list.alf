@@ -1,0 +1,2 @@
+/* Variable definition list */
+declare integer n, float r, boolean l, string s ;

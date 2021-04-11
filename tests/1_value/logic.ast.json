@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "boolean",
+            "value": true,
+            "line": 1
+        }
+    ],
+    "line": 1
+}

@@ -1,0 +1,19 @@
+/* Prime number */
+
+declare integer n;
+
+n = exec _read();
+
+declare boolean p =true;
+
+for i from 2 to exec _sqrt(n) start 
+	if n % i == 0 
+		p = false;
+	end;
+finish;
+
+if p != 0
+exec _write(text = n+" is prime"); 
+else 
+exec _write(text = n+" is not prime"); 
+end;

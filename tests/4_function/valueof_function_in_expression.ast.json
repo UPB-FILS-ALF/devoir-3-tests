@@ -1,0 +1,54 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "s",
+                    "line": 3
+                }
+            ],
+            "line": 3
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "Variable",
+                "title": "s",
+                "line": 5
+            },
+            "from": {
+                "id": "FunctionCall",
+                "function_name": "sum",
+                "parameters": [
+                    {
+                        "id": "FunctionCallParameter",
+                        "name": "x",
+                        "value": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 50,
+                            "line": 5
+                        }
+                    },
+                    {
+                        "id": "FunctionCallParameter",
+                        "name": "y",
+                        "value": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 50,
+                            "line": 5
+                        }
+                    }
+                ],
+                "line": 5
+            },
+            "line": 5
+        }
+    ],
+    "line": 5
+}

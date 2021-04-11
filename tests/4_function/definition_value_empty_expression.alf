@@ -1,0 +1,6 @@
+/* Function definition with empty value */
+
+function print (string text):string
+begin
+empty;
+end;

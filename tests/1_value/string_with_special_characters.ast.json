@@ -1,0 +1,35 @@
+{
+    "id": "Errors",
+    "errors": [
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 51,
+            "message": "token recognition error at: '\\'"
+        },
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 52,
+            "message": "token recognition error at: '\\'"
+        },
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 54,
+            "message": "token recognition error at: '\\'"
+        },
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 57,
+            "message": "token recognition error at: '\\'"
+        },
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 60,
+            "message": "token recognition error at: '\";'"
+        }
+    ]
+}

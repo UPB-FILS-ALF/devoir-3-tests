@@ -1,0 +1,3 @@
+/* Function definition without parameters */
+
+function say:string => "say";

@@ -1,0 +1,36 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "n",
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "float",
+                    "title": "r",
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "boolean",
+                    "title": "l",
+                    "line": 2
+                },
+                {
+                    "id": "DeclarationElement",
+                    "type": "string",
+                    "title": "s",
+                    "line": 2
+                }
+            ],
+            "line": 2
+        }
+    ],
+    "line": 2
+}

@@ -1,0 +1,9 @@
+/* For loop with expression */
+
+declare integer n = 0;
+declare integer s = 1;
+declare integer max = 2*n;
+
+for i in list start
+	n = n + 1;
+finish;

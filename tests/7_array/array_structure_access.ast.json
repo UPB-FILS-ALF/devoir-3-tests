@@ -1,0 +1,77 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "ClassDefinition",
+            "title": "school",
+            "properties": [
+                {
+                    "id": "LocalProperty",
+                    "type": "string",
+                    "title": "name",
+                    "line": 4
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "boolean",
+                    "title": "private",
+                    "line": 5
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "integer",
+                    "title": "type",
+                    "line": 6
+                }
+            ],
+            "line": 7
+        },
+        {
+            "id": "Array",
+            "title": "school_array",
+            "element_type": "school",
+            "from": "1",
+            "to": "9",
+            "line": 9
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "school_array",
+                    "title": "list_of_schools",
+                    "line": 11
+                }
+            ],
+            "line": 11
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "ClassProperty",
+                "object": {
+                    "id": "ArrayElement",
+                    "array": "list_of_schools",
+                    "index": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 1,
+                        "line": 13
+                    },
+                    "line": 13
+                },
+                "title": "name",
+                "line": 13
+            },
+            "from": {
+                "id": "Value",
+                "type": "string",
+                "value": "School",
+                "line": 13
+            },
+            "line": 13
+        }
+    ],
+    "line": 13
+}

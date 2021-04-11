@@ -1,0 +1,3 @@
+/* Dispatch message with parameter expression */
+
+exec print(text="text"+" "+"to"+" "+"write", additional=" text ");

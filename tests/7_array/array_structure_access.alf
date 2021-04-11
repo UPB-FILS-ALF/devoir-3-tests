@@ -1,0 +1,13 @@
+/* Array with class definition */
+
+class school
+	local string name;
+	local boolean private;
+	local integer type;
+end;
+
+school array school_array[1:9];
+
+declare school_array list_of_schools;
+
+list_of_schools[1].name = "School";

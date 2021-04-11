@@ -1,0 +1,7 @@
+/* Class definition */
+
+class school
+	local string name;
+	local boolean private;
+	local integer type;
+end;

@@ -1,0 +1,2 @@
+Variable definition
+10

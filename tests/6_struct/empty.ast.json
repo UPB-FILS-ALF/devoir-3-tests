@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "ClassDefinition",
+            "title": "product",
+            "properties": [],
+            "line": 2
+        }
+    ],
+    "line": 4
+}

@@ -1,0 +1,49 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "ClassDefinition",
+            "title": "school",
+            "properties": [
+                {
+                    "id": "LocalProperty",
+                    "type": "string",
+                    "title": "name",
+                    "value": {
+                        "id": "Value",
+                        "type": "string",
+                        "value": "Public Elementary School",
+                        "line": 4
+                    },
+                    "line": 4
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "boolean",
+                    "title": "private",
+                    "value": {
+                        "id": "Value",
+                        "type": "boolean",
+                        "value": false,
+                        "line": 5
+                    },
+                    "line": 5
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "integer",
+                    "title": "type",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 0,
+                        "line": 6
+                    },
+                    "line": 6
+                }
+            ],
+            "line": 7
+        }
+    ],
+    "line": 7
+}

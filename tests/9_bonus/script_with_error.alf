@@ -1,0 +1,18 @@
+/* Prime number */
+
+DECLARE integer n;
+
+n = read();
+
+DECLARE boolean p =true;
+
+for i from 2 to sqrt(n) start 
+	if n % i == 0 
+		p = false;
+	end;
+
+if p != 0
+write(text = n+" is prime"); 
+else 
+write(text = n+" is not prime"); 
+end;

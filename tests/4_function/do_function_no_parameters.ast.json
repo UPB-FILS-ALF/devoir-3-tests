@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionCall",
+            "function_name": "_getpid",
+            "parameters": [],
+            "line": 3
+        }
+    ],
+    "line": 3
+}

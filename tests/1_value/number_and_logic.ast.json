@@ -1,0 +1,18 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "integer",
+            "value": 758234,
+            "line": 3
+        },
+        {
+            "id": "Value",
+            "type": "boolean",
+            "value": false,
+            "line": 4
+        }
+    ],
+    "line": 4
+}

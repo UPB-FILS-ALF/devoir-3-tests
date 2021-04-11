@@ -1,0 +1,25 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "_sum",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n1"
+                },
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n2"
+                }
+            ],
+            "return_type": "integer",
+            "statements": [],
+            "line": 4
+        }
+    ],
+    "line": 4
+}

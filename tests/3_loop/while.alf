@@ -1,0 +1,7 @@
+/* While loop */
+
+declare integer n = 0;
+
+while n < 100 start
+	n = n + 1;
+finish;

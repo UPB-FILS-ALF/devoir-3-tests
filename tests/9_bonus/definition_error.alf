@@ -1,0 +1,2 @@
+/* Variable definition error */
+declare variable < integer;

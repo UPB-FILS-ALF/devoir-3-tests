@@ -1,0 +1,12 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "symbol",
+            "value": "a",
+            "line": 2
+        }
+    ],
+    "line": 2
+}

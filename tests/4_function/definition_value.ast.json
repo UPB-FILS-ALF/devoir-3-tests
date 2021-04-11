@@ -1,0 +1,17 @@
+{
+    "id": "Errors",
+    "errors": [
+        {
+            "id": "Syntax Error",
+            "line": 6,
+            "position": 19,
+            "message": "mismatched input '=' expecting '['"
+        },
+        {
+            "id": "Syntax Error",
+            "line": 7,
+            "position": 1,
+            "message": "mismatched input 'return' expecting {<EOF>, NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'repeat', 'while', BOOL_VALUE, 'if', '(', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+        }
+    ]
+}

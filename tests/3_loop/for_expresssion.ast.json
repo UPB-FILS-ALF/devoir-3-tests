@@ -1,0 +1,107 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "n",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 0,
+                        "line": 3
+                    },
+                    "line": 3
+                }
+            ],
+            "line": 3
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "s",
+                    "value": {
+                        "id": "Value",
+                        "type": "integer",
+                        "value": 1,
+                        "line": 4
+                    },
+                    "line": 4
+                }
+            ],
+            "line": 4
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "max",
+                    "value": {
+                        "id": "Expression",
+                        "op": "*",
+                        "left": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 2,
+                            "line": 5
+                        },
+                        "right": {
+                            "id": "Variable",
+                            "title": "n",
+                            "line": 5
+                        },
+                        "line": 5
+                    },
+                    "line": 5
+                }
+            ],
+            "line": 5
+        },
+        {
+            "id": "ForLoop",
+            "variable": "i",
+            "exp": {
+                "id": "Variable",
+                "title": "list",
+                "line": 7
+            },
+            "statements": [
+                {
+                    "id": "Assign",
+                    "to": {
+                        "id": "Variable",
+                        "title": "n",
+                        "line": 8
+                    },
+                    "from": {
+                        "id": "Expression",
+                        "op": "+",
+                        "left": {
+                            "id": "Variable",
+                            "title": "n",
+                            "line": 8
+                        },
+                        "right": {
+                            "id": "Value",
+                            "type": "integer",
+                            "value": 1,
+                            "line": 8
+                        },
+                        "line": 8
+                    },
+                    "line": 8
+                }
+            ],
+            "line": 9
+        }
+    ],
+    "line": 9
+}

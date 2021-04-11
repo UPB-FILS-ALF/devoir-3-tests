@@ -1,0 +1,18 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Value",
+            "type": "symbol",
+            "value": "s",
+            "line": 3
+        },
+        {
+            "id": "Value",
+            "type": "string",
+            "value": "a text",
+            "line": 4
+        }
+    ],
+    "line": 4
+}

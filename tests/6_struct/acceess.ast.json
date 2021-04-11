@@ -1,0 +1,63 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "ClassDefinition",
+            "title": "school",
+            "properties": [
+                {
+                    "id": "LocalProperty",
+                    "type": "string",
+                    "title": "name",
+                    "line": 3
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "boolean",
+                    "title": "private",
+                    "line": 4
+                },
+                {
+                    "id": "LocalProperty",
+                    "type": "integer",
+                    "title": "type",
+                    "line": 5
+                }
+            ],
+            "line": 6
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "school",
+                    "title": "s",
+                    "line": 8
+                }
+            ],
+            "line": 8
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "ClassProperty",
+                "object": {
+                    "id": "Variable",
+                    "title": "s",
+                    "line": 10
+                },
+                "title": "name",
+                "line": 10
+            },
+            "from": {
+                "id": "Value",
+                "type": "string",
+                "value": "The new name for the school",
+                "line": 10
+            },
+            "line": 10
+        }
+    ],
+    "line": 10
+}

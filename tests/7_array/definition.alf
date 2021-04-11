@@ -1,0 +1,3 @@
+/* Array definition */
+
+string array info[1:9];

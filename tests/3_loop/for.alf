@@ -1,0 +1,7 @@
+/* For loop */
+
+declare integer n = 0;
+
+for i from 1 to 100 start
+	n = n + 1;
+finish;

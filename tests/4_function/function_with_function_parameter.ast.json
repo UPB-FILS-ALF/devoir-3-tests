@@ -1,0 +1,88 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionCall",
+            "function_name": "_print",
+            "parameters": [
+                {
+                    "id": "FunctionCallParameter",
+                    "name": "text",
+                    "value": {
+                        "id": "Expression",
+                        "op": "+",
+                        "left": {
+                            "id": "Expression",
+                            "op": "+",
+                            "left": {
+                                "id": "Expression",
+                                "op": "+",
+                                "left": {
+                                    "id": "Expression",
+                                    "op": "+",
+                                    "left": {
+                                        "id": "Value",
+                                        "type": "string",
+                                        "value": "text",
+                                        "line": 3
+                                    },
+                                    "right": {
+                                        "id": "Value",
+                                        "type": "symbol",
+                                        "value": " ",
+                                        "line": 3
+                                    },
+                                    "line": 3
+                                },
+                                "right": {
+                                    "id": "Value",
+                                    "type": "string",
+                                    "value": "to",
+                                    "line": 3
+                                },
+                                "line": 3
+                            },
+                            "right": {
+                                "id": "Value",
+                                "type": "symbol",
+                                "value": " ",
+                                "line": 3
+                            },
+                            "line": 3
+                        },
+                        "right": {
+                            "id": "Value",
+                            "type": "string",
+                            "value": "write",
+                            "line": 3
+                        },
+                        "line": 3
+                    }
+                },
+                {
+                    "id": "FunctionCallParameter",
+                    "name": "number",
+                    "value": {
+                        "id": "FunctionCall",
+                        "function_name": "math",
+                        "parameters": [
+                            {
+                                "id": "FunctionCallParameter",
+                                "name": "a",
+                                "value": {
+                                    "id": "Value",
+                                    "type": "integer",
+                                    "value": 47821,
+                                    "line": 3
+                                }
+                            }
+                        ],
+                        "line": 3
+                    }
+                }
+            ],
+            "line": 3
+        }
+    ],
+    "line": 3
+}

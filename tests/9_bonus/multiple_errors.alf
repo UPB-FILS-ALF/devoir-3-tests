@@ -1,0 +1,9 @@
+/* Errors list */
+
+declare boolean p;
+declare integer n; 
+
+n++;
+p=~p;
+true = p;
+

@@ -1,0 +1,3 @@
+/* Call function without parameters */
+
+exec _getpid();

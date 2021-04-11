@@ -1,0 +1,11 @@
+{
+    "id": "Errors",
+    "errors": [
+        {
+            "id": "Lexical Error",
+            "line": 3,
+            "position": 3,
+            "message": "token recognition error at: '\";'"
+        }
+    ]
+}

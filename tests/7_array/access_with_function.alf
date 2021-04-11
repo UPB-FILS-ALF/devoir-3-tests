@@ -1,0 +1,7 @@
+/* Access element of array with message */
+
+string array details[1:9];
+
+declare details v;
+
+v[exec position()] = "The new name for the school";

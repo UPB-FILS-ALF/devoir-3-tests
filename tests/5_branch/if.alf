@@ -1,0 +1,7 @@
+/* If */
+
+declare integer n;
+
+if n > 2
+	n = n + 1;
+end;

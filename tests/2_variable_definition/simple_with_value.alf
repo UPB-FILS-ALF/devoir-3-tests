@@ -1,0 +1,2 @@
+/* Variable definition with value */
+declare integer variable = 0 ;

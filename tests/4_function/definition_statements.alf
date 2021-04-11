@@ -1,0 +1,6 @@
+/* Function definition with statements */
+
+function sum (integer n1, integer n2):integer 
+begin
+	s = n1 + n2;
+end;

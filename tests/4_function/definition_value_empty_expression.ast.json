@@ -1,0 +1,27 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "FunctionDefinition",
+            "title": "print",
+            "parameters": [
+                {
+                    "id": "FunctionDefinitionParameter",
+                    "type": "string",
+                    "name": "text"
+                }
+            ],
+            "return_type": "string",
+            "statements": [
+                {
+                    "id": "Value",
+                    "type": "empty",
+                    "value": "empty",
+                    "line": 5
+                }
+            ],
+            "line": 6
+        }
+    ],
+    "line": 6
+}

@@ -1,0 +1,2 @@
+/* Variable definition with expression */
+declare integer e = 20+3*5;

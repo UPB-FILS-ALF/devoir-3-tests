@@ -1,0 +1,5 @@
+/* Call function in expression */
+
+declare integer s;
+
+s = exec sum (x=50, y=50);
