@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Run is no working, check back later"
+echo "Run is no working, check the alf language source files"
 exit 1
 
 dir="$(dirname $0)"
