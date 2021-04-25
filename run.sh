@@ -14,7 +14,7 @@ function run_test {
     node $dir/../index.js $filename output.ast.json &> $outputname
     ERROR=0
 
-    if node verify.js "$astoutputname" "output.ast.json" &> output.report;
+    if node $dir/verify.js "$(pwd)/$astoutputname" "$(pwd)/output.ast.json" &> output.report;
     then
        echo "Correct"
     else

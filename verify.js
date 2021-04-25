@@ -11,7 +11,8 @@ let verifyTree;
 
 try
 {
-	originalTree = require ('./'+originalFile);
+	if (originalFile[0] !== '/') originalFile = './'+originalFile;
+	originalTree = require (originalFile);
 }
 catch (e)
 {
@@ -21,7 +22,8 @@ catch (e)
 
 try
 {
-	verifyTree = require ('./'+verifyFile);
+	if (verifyFile[0] !== '/') verifyFile = './'+verifyFile;
+	verifyTree = require (verifyFile);
 }
 catch (e)
 {
