@@ -2,4 +2,4 @@
 
 declare integer s;
 
-s = exec sum (x=50, y=50);
+s = exec sum (50, 50);

@@ -1,3 +1,0 @@
-/* Call function with parameter */
-
-exec print (text="text to write");

@@ -18,7 +18,7 @@ declare integer v;
 v = exec read();
 
 if exec prime(v) 
-	exec write(text = v+" is prime");
+	exec write(v+" is prime");
 else
-	exec write(text = v+" is not prime");
+	exec write(v+" is not prime");
 end;
