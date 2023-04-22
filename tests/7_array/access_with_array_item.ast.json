@@ -1,58 +1,90 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Array",
-            "title": "details",
-            "element_type": "string",
-            "from": "1",
-            "to": "9",
-            "line": 3
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "details",
+      "type" : {
+        "@class" : "org.easycompiler.type.Array",
+        "title" : null,
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         },
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "details",
-                    "title": "v",
-                    "line": 5
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "details",
-                    "title": "p",
-                    "line": 5
-                }
-            ],
-            "line": 5
+        "length" : 8
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 5,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 5,
+        "title" : "v",
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "title" : "details"
         },
-        {
-            "id": "Assign",
-            "to": {
-                "id": "ArrayElement",
-                "array": "v",
-                "index": {
-                    "id": "ArrayElement",
-                    "array": "p",
-                    "index": {
-                        "id": "Value",
-                        "type": "integer",
-                        "value": 5,
-                        "line": 7
-                    },
-                    "line": 7
-                },
-                "line": 7
+        "initial" : null
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 5,
+        "title" : "p",
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "title" : "details"
+        },
+        "initial" : null
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "line" : 7,
+      "to" : {
+        "@class" : "org.easycompiler.ast.ArrayElement",
+        "line" : 7,
+        "type" : null,
+        "array" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 7,
+          "type" : null,
+          "title" : "v"
+        },
+        "index" : {
+          "@class" : "org.easycompiler.ast.ArrayElement",
+          "line" : 7,
+          "type" : null,
+          "array" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 7,
+            "type" : null,
+            "title" : "p"
+          },
+          "index" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 7,
+            "type" : {
+              "@class" : "org.easycompiler.type.Integer",
+              "title" : "integer",
+              "type" : "I64"
             },
-            "from": {
-                "id": "Value",
-                "type": "string",
-                "value": "The new name for the school",
-                "line": 7
-            },
-            "line": 7
+            "value" : "5"
+          }
         }
-    ],
-    "line": 7
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "line" : 7,
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
+        },
+        "value" : "The new name for the school"
+      }
+    } ] ]
+  }
 }

@@ -1,12 +1,20 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "ClassDefinition",
-            "title": "product",
-            "properties": [],
-            "line": 2
-        }
-    ],
-    "line": 4
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "product",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "title" : "product",
+        "properties" : [ "java.util.ArrayList", [ ] ]
+      }
+    } ] ]
+  }
 }

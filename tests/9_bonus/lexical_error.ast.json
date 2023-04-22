@@ -1,11 +1,11 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Lexical Error",
-            "line": 2,
-            "position": 0,
-            "message": "token recognition error at: '^'"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Errors",
+  "line" : 0,
+  "errorList" : [ "java.util.ArrayList", [ {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 2,
+    "id" : "Lexical Error",
+    "charPosition" : 0,
+    "msg" : "token recognition error at: '^'"
+  } ] ]
 }

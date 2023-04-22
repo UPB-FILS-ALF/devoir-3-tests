@@ -1,12 +1,19 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Value",
-            "type": "symbol",
-            "value": "a",
-            "line": 2
-        }
-    ],
-    "line": 2
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Value",
+      "line" : 2,
+      "type" : {
+        "@class" : "org.easycompiler.type.Str",
+        "title" : "string"
+      },
+      "value" : "a"
+    } ] ]
+  }
 }

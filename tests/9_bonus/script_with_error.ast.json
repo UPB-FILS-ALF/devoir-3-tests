@@ -1,41 +1,83 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Syntax Error",
-            "line": 3,
-            "position": 17,
-            "message": "mismatched input ';' expecting '['"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 5,
-            "position": 9,
-            "message": "no viable alternative at input '()'"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 7,
-            "position": 18,
-            "message": "mismatched input '=' expecting '['"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 9,
-            "position": 22,
-            "message": "mismatched input ')' expecting {NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'finish', 'repeat', 'while', BOOL_VALUE, 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 15,
-            "position": 11,
-            "message": "no viable alternative at input '(text='"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 16,
-            "position": 0,
-            "message": "mismatched input 'else' expecting {NEWLINE, FUNCTION, '+', '-', '*', '/', '%', 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'end', 'repeat', 'while', BOOL_VALUE, 'if', 'else', '(', ';', '&&', '||', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Errors",
+  "line" : 0,
+  "errorList" : [ "java.util.ArrayList", [ {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 3,
+    "id" : "Syntax Error",
+    "charPosition" : 16,
+    "msg" : "missing 'array' at 'n'"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 3,
+    "id" : "Syntax Error",
+    "charPosition" : 17,
+    "msg" : "mismatched input ';' expecting '['"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 5,
+    "id" : "Syntax Error",
+    "charPosition" : 9,
+    "msg" : "no viable alternative at input '()'"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 7,
+    "id" : "Syntax Error",
+    "charPosition" : 16,
+    "msg" : "missing 'array' at 'p'"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 7,
+    "id" : "Syntax Error",
+    "charPosition" : 18,
+    "msg" : "mismatched input '=' expecting '['"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 9,
+    "id" : "Syntax Error",
+    "charPosition" : 20,
+    "msg" : "missing 'start' at '('"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 9,
+    "id" : "Syntax Error",
+    "charPosition" : 24,
+    "msg" : "extraneous input 'start' expecting {NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'finish', 'repeat', 'while', BOOL_VALUE, 'return', 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 15,
+    "id" : "Syntax Error",
+    "charPosition" : 11,
+    "msg" : "no viable alternative at input '(text='"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 15,
+    "id" : "Syntax Error",
+    "charPosition" : 26,
+    "msg" : "extraneous input ')' expecting {FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'end', 'repeat', 'while', BOOL_VALUE, 'return', 'if', 'else', '(', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 16,
+    "id" : "Syntax Error",
+    "charPosition" : 0,
+    "msg" : "extraneous input 'else' expecting {NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'finish', 'repeat', 'while', BOOL_VALUE, 'return', 'if', '(', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 17,
+    "id" : "Syntax Error",
+    "charPosition" : 11,
+    "msg" : "no viable alternative at input '(text='"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 17,
+    "id" : "Syntax Error",
+    "charPosition" : 30,
+    "msg" : "extraneous input ')' expecting {NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'finish', 'repeat', 'while', BOOL_VALUE, 'return', 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 18,
+    "id" : "Syntax Error",
+    "charPosition" : 0,
+    "msg" : "mismatched input 'end' expecting {NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'finish', 'repeat', 'while', BOOL_VALUE, 'return', 'if', '(', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  } ] ]
 }

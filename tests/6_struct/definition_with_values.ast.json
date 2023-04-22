@@ -1,49 +1,73 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "ClassDefinition",
-            "title": "school",
-            "properties": [
-                {
-                    "id": "LocalProperty",
-                    "type": "string",
-                    "title": "name",
-                    "value": {
-                        "id": "Value",
-                        "type": "string",
-                        "value": "Public Elementary School",
-                        "line": 4
-                    },
-                    "line": 4
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "boolean",
-                    "title": "private",
-                    "value": {
-                        "id": "Value",
-                        "type": "boolean",
-                        "value": false,
-                        "line": 5
-                    },
-                    "line": 5
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "integer",
-                    "title": "type",
-                    "value": {
-                        "id": "Value",
-                        "type": "integer",
-                        "value": 0,
-                        "line": 6
-                    },
-                    "line": 6
-                }
-            ],
-            "line": 7
-        }
-    ],
-    "line": 7
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "school",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "title" : "name",
+          "value" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 4,
+            "type" : {
+              "@class" : "org.easycompiler.type.Str",
+              "title" : "string"
+            },
+            "value" : "Public Elementary School"
+          }
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Boolean",
+            "title" : "boolean"
+          },
+          "title" : "private",
+          "value" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 5,
+            "type" : {
+              "@class" : "org.easycompiler.type.Boolean",
+              "title" : "boolean"
+            },
+            "value" : "false"
+          }
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 6,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "type",
+          "value" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 6,
+            "type" : {
+              "@class" : "org.easycompiler.type.Integer",
+              "title" : "integer",
+              "type" : "I64"
+            },
+            "value" : "0"
+          }
+        } ] ]
+      }
+    } ] ]
+  }
 }

@@ -1,36 +1,53 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "integer",
-                    "title": "n",
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "float",
-                    "title": "r",
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "boolean",
-                    "title": "l",
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "string",
-                    "title": "s",
-                    "line": 2
-                }
-            ],
-            "line": 2
-        }
-    ],
-    "line": 2
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 2,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "n",
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
+        },
+        "initial" : null
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "r",
+        "type" : {
+          "@class" : "org.easycompiler.type.Float",
+          "title" : "float",
+          "type" : "F64"
+        },
+        "initial" : null
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "l",
+        "type" : {
+          "@class" : "org.easycompiler.type.Boolean",
+          "title" : "boolean"
+        },
+        "initial" : null
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "s",
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
+        },
+        "initial" : null
+      } ] ]
+    } ] ]
+  }
 }

@@ -1,10 +1,15 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "type": "empty",
-            "line": 1
-        }
-    ],
-    "line": 1
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 1,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 1,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Empty",
+      "line" : 1,
+      "type" : null
+    } ] ]
+  }
 }

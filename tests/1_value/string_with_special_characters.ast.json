@@ -1,35 +1,19 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Lexical Error",
-            "line": 3,
-            "position": 51,
-            "message": "token recognition error at: '\\'"
-        },
-        {
-            "id": "Lexical Error",
-            "line": 3,
-            "position": 52,
-            "message": "token recognition error at: '\\'"
-        },
-        {
-            "id": "Lexical Error",
-            "line": 3,
-            "position": 54,
-            "message": "token recognition error at: '\\'"
-        },
-        {
-            "id": "Lexical Error",
-            "line": 3,
-            "position": 57,
-            "message": "token recognition error at: '\\'"
-        },
-        {
-            "id": "Lexical Error",
-            "line": 3,
-            "position": 60,
-            "message": "token recognition error at: '\";'"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Value",
+      "line" : 3,
+      "type" : {
+        "@class" : "org.easycompiler.type.Str",
+        "title" : "string"
+      },
+      "value" : "this is a string with with special chacaraters \" \\ \n \r "
+    } ] ]
+  }
 }

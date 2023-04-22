@@ -1,21 +1,25 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "say",
-            "parameters": [],
-            "return_type": "string",
-            "statements": [
-                {
-                    "id": "Value",
-                    "type": "string",
-                    "value": "say",
-                    "line": 3
-                }
-            ],
-            "line": 3
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "say",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : null,
+        "statements" : null,
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         }
-    ],
-    "line": 3
+      }
+    } ] ]
+  }
 }

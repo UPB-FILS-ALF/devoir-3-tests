@@ -1,24 +1,30 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "auto",
-                    "title": "count",
-                    "value": {
-                        "id": "Value",
-                        "type": "integer",
-                        "value": 5,
-                        "line": 2
-                    },
-                    "line": 2
-                }
-            ],
-            "line": 2
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 2,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "count",
+        "type" : null,
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 2,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "5"
         }
-    ],
-    "line": 2
+      } ] ]
+    } ] ]
+  }
 }

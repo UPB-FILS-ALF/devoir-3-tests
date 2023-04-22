@@ -1,12 +1,19 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Value",
-            "type": "boolean",
-            "value": true,
-            "line": 1
-        }
-    ],
-    "line": 1
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 1,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 1,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Value",
+      "line" : 1,
+      "type" : {
+        "@class" : "org.easycompiler.type.Boolean",
+        "title" : "boolean"
+      },
+      "value" : "true"
+    } ] ]
+  }
 }

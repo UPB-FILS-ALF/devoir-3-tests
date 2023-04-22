@@ -1,12 +1,22 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionCall",
-            "function_name": "_getpid",
-            "parameters": [],
-            "line": 3
-        }
-    ],
-    "line": 3
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.FunctionCall",
+      "line" : 3,
+      "type" : null,
+      "function_name" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "line" : 3,
+        "type" : null,
+        "title" : "_getpid"
+      },
+      "arguments" : [ "java.util.ArrayList", [ ] ]
+    } ] ]
+  }
 }

@@ -1,23 +1,17 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Syntax Error",
-            "line": 6,
-            "position": 2,
-            "message": "mismatched input '+' expecting {'empty', BOOL_VALUE, '(', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        },
-        {
-            "id": "Lexical Error",
-            "line": 7,
-            "position": 2,
-            "message": "token recognition error at: '~'"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 7,
-            "position": 1,
-            "message": "mismatched input '=' expecting {<EOF>, NEWLINE, FUNCTION, '+', '-', '*', '/', '%', 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'repeat', 'while', BOOL_VALUE, 'if', '(', ';', '&&', '||', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Errors",
+  "line" : 0,
+  "errorList" : [ "java.util.ArrayList", [ {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 6,
+    "id" : "Syntax Error",
+    "charPosition" : 2,
+    "msg" : "no viable alternative at input 'n++'"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 7,
+    "id" : "Lexical Error",
+    "charPosition" : 2,
+    "msg" : "token recognition error at: '~'"
+  } ] ]
 }

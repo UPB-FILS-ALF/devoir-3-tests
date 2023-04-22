@@ -1,63 +1,85 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "ClassDefinition",
-            "title": "school",
-            "properties": [
-                {
-                    "id": "LocalProperty",
-                    "type": "string",
-                    "title": "name",
-                    "line": 3
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "boolean",
-                    "title": "private",
-                    "line": 4
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "integer",
-                    "title": "type",
-                    "line": 5
-                }
-            ],
-            "line": 6
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 2,
+      "title" : "school",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "title" : "name",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Boolean",
+            "title" : "boolean"
+          },
+          "title" : "private",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "type",
+          "value" : null
+        } ] ]
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 8,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 8,
+        "title" : "s",
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "title" : "school"
         },
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "school",
-                    "title": "s",
-                    "line": 8
-                }
-            ],
-            "line": 8
+        "initial" : null
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "line" : 10,
+      "to" : {
+        "@class" : "org.easycompiler.ast.StructElement",
+        "line" : 10,
+        "type" : null,
+        "struct" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 10,
+          "type" : null,
+          "title" : "s"
         },
-        {
-            "id": "Assign",
-            "to": {
-                "id": "ClassProperty",
-                "object": {
-                    "id": "Variable",
-                    "title": "s",
-                    "line": 10
-                },
-                "title": "name",
-                "line": 10
-            },
-            "from": {
-                "id": "Value",
-                "type": "string",
-                "value": "The new name for the school",
-                "line": 10
-            },
-            "line": 10
-        }
-    ],
-    "line": 10
+        "property" : "name"
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "line" : 10,
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
+        },
+        "value" : "The new name for the school"
+      }
+    } ] ]
+  }
 }

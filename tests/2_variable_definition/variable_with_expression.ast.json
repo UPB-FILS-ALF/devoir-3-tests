@@ -1,46 +1,66 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "integer",
-                    "title": "e",
-                    "value": {
-                        "id": "Expression",
-                        "op": "+",
-                        "left": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 20,
-                            "line": 2
-                        },
-                        "right": {
-                            "id": "Expression",
-                            "op": "*",
-                            "left": {
-                                "id": "Value",
-                                "type": "integer",
-                                "value": 3,
-                                "line": 2
-                            },
-                            "right": {
-                                "id": "Value",
-                                "type": "integer",
-                                "value": 5,
-                                "line": 2
-                            },
-                            "line": 2
-                        },
-                        "line": 2
-                    },
-                    "line": 2
-                }
-            ],
-            "line": 2
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 2,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "e",
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
+        },
+        "initial" : {
+          "@class" : "org.easycompiler.ast.BinaryExpression",
+          "line" : 2,
+          "type" : null,
+          "left" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 2,
+            "type" : {
+              "@class" : "org.easycompiler.type.Integer",
+              "title" : "integer",
+              "type" : "I64"
+            },
+            "value" : "20"
+          },
+          "right" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 2,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 2,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "3"
+            },
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 2,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "5"
+            },
+            "op" : "MUL"
+          },
+          "op" : "ADD"
         }
-    ],
-    "line": 2
+      } ] ]
+    } ] ]
+  }
 }

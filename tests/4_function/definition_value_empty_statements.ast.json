@@ -1,36 +1,57 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "print",
-            "parameters": [
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "string",
-                    "name": "text"
-                }
-            ],
-            "return_type": "string",
-            "statements": [
-                {
-                    "id": "Assign",
-                    "to": {
-                        "id": "Variable",
-                        "title": "text",
-                        "line": 5
-                    },
-                    "from": {
-                        "id": "Value",
-                        "type": "string",
-                        "value": "",
-                        "line": 5
-                    },
-                    "line": 5
-                }
-            ],
-            "line": 6
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "print",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "title" : "text",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "line" : 3,
+          "type" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Assignment",
+            "line" : 5,
+            "to" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 5,
+              "type" : null,
+              "title" : "text"
+            },
+            "from" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 5,
+              "type" : {
+                "@class" : "org.easycompiler.type.Str",
+                "title" : "string"
+              },
+              "value" : ""
+            }
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         }
-    ],
-    "line": 6
+      }
+    } ] ]
+  }
 }

@@ -1,25 +1,51 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "_sum",
-            "parameters": [
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "integer",
-                    "name": "n1"
-                },
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "integer",
-                    "name": "n2"
-                }
-            ],
-            "return_type": "integer",
-            "statements": [],
-            "line": 4
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 4,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 4,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 4,
+      "title" : "_sum",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "n1",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "n2",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "line" : 4,
+          "type" : null,
+          "statements" : [ "java.util.ArrayList", [ ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
         }
-    ],
-    "line": 4
+      }
+    } ] ]
+  }
 }

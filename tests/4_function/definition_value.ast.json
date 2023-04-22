@@ -1,62 +1,91 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "sum",
-            "parameters": [
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "integer",
-                    "name": "n1"
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 4,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 4,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 4,
+      "title" : "sum",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "n1",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "n2",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "line" : 4,
+          "type" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Group",
+            "line" : 6,
+            "nodes" : [ "java.util.ArrayList", [ {
+              "@class" : "org.easycompiler.ast.VariableDefinition",
+              "line" : 6,
+              "title" : "s",
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "initial" : {
+                "@class" : "org.easycompiler.ast.BinaryExpression",
+                "line" : 6,
+                "type" : null,
+                "left" : {
+                  "@class" : "org.easycompiler.ast.Identifier",
+                  "line" : 6,
+                  "type" : null,
+                  "title" : "n1"
                 },
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "integer",
-                    "name": "n2"
-                }
-            ],
-            "return_type": "integer",
-            "statements": [
-                {
-                    "id": "Declaration",
-                    "elements": [
-                        {
-                            "id": "DeclarationElement",
-                            "type": "integer",
-                            "title": "s",
-                            "value": {
-                                "id": "Expression",
-                                "op": "+",
-                                "left": {
-                                    "id": "Variable",
-                                    "title": "n1",
-                                    "line": 6
-                                },
-                                "right": {
-                                    "id": "Variable",
-                                    "title": "n2",
-                                    "line": 6
-                                },
-                                "line": 6
-                            },
-                            "line": 6
-                        }
-                    ],
-                    "line": 6
-                }
-            ],
-            "return_function": {
-                "id": "ReturnFunction",
-                "value": {
-                    "id": "Variable",
-                    "title": "s",
-                    "line": 7
+                "right" : {
+                  "@class" : "org.easycompiler.ast.Identifier",
+                  "line" : 6,
+                  "type" : null,
+                  "title" : "n2"
                 },
-                "line": 7
-            },
-            "line": 8
+                "op" : "ADD"
+              }
+            } ] ]
+          }, {
+            "@class" : "org.easycompiler.ast.Return",
+            "line" : 7,
+            "value" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 7,
+              "type" : null,
+              "title" : "s"
+            }
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
         }
-    ],
-    "line": 8
+      }
+    } ] ]
+  }
 }

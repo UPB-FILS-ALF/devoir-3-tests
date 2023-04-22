@@ -1,18 +1,27 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Value",
-            "type": "symbol",
-            "value": "s",
-            "line": 3
-        },
-        {
-            "id": "Value",
-            "type": "string",
-            "value": "a text",
-            "line": 4
-        }
-    ],
-    "line": 4
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Value",
+      "line" : 3,
+      "type" : {
+        "@class" : "org.easycompiler.type.Str",
+        "title" : "string"
+      },
+      "value" : "s"
+    }, {
+      "@class" : "org.easycompiler.ast.Value",
+      "line" : 4,
+      "type" : {
+        "@class" : "org.easycompiler.type.Str",
+        "title" : "string"
+      },
+      "value" : "a text"
+    } ] ]
+  }
 }
