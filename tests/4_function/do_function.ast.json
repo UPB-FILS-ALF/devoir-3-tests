@@ -1,23 +1,30 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionCall",
-            "function_name": "print",
-            "parameters": [
-                {
-                    "id": "FunctionCallParameter",
-                    "name": "text",
-                    "value": {
-                        "id": "Value",
-                        "type": "string",
-                        "value": "text to write",
-                        "line": 3
-                    }
-                }
-            ],
-            "line": 3
-        }
-    ],
-    "line": 3
-}
+    "@class" : "org.easycompiler.ast.Module",
+    "line" : 3,
+    "title" : "program",
+    "block" : {
+      "@class" : "org.easycompiler.ast.Block",
+      "line" : 3,
+      "type" : null,
+      "statements" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.FunctionCall",
+        "line" : 3,
+        "type" : null,
+        "function_name" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 3,
+          "type" : null,
+          "title" : "print"
+        },
+        "arguments" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "value" : "text to write"
+        } ] ]
+      } ] ]
+    }
+  }

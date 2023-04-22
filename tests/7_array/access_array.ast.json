@@ -46,16 +46,14 @@
           "title" : "v"
         },
         "index" : {
-          "@class" : "org.easycompiler.ast.FunctionCall",
+          "@class" : "org.easycompiler.ast.Value",
           "line" : 7,
-          "type" : null,
-          "function_name" : {
-            "@class" : "org.easycompiler.ast.Identifier",
-            "line" : 7,
-            "type" : null,
-            "title" : "position"
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
           },
-          "arguments" : [ "java.util.ArrayList", [ ] ]
+          "value" : "5"
         }
       },
       "from" : {

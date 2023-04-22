@@ -1,54 +1,64 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "integer",
-                    "title": "s",
-                    "line": 3
-                }
-            ],
-            "line": 3
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 3,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 3,
+        "title" : "s",
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
         },
-        {
-            "id": "Assign",
-            "to": {
-                "id": "Variable",
-                "title": "s",
-                "line": 5
-            },
-            "from": {
-                "id": "FunctionCall",
-                "function_name": "sum",
-                "parameters": [
-                    {
-                        "id": "FunctionCallParameter",
-                        "name": "x",
-                        "value": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 50,
-                            "line": 5
-                        }
-                    },
-                    {
-                        "id": "FunctionCallParameter",
-                        "name": "y",
-                        "value": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 50,
-                            "line": 5
-                        }
-                    }
-                ],
-                "line": 5
-            },
-            "line": 5
-        }
-    ],
-    "line": 5
+        "initial" : null
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "line" : 5,
+      "to" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "line" : 5,
+        "type" : null,
+        "title" : "s"
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.FunctionCall",
+        "line" : 5,
+        "type" : null,
+        "function_name" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 5,
+          "type" : null,
+          "title" : "sum"
+        },
+        "arguments" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "50"
+        }, {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "50"
+        } ] ]
+      }
+    } ] ]
+  }
 }

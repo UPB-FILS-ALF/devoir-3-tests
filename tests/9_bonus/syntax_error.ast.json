@@ -1,11 +1,11 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Syntax Error",
-            "line": 3,
-            "position": 5,
-            "message": "mismatched input ',' expecting {<EOF>, NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'repeat', 'while', BOOL_VALUE, 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Errors",
+  "line" : 0,
+  "errorList" : [ "java.util.ArrayList", [ {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 3,
+    "id" : "Syntax Error",
+    "charPosition" : 5,
+    "msg" : "mismatched input ',' expecting {<EOF>, NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'repeat', 'while', BOOL_VALUE, 'return', 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
+  } ] ]
 }

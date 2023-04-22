@@ -1,27 +1,43 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "print",
-            "parameters": [
-                {
-                    "id": "FunctionDefinitionParameter",
-                    "type": "string",
-                    "name": "text"
-                }
-            ],
-            "return_type": "string",
-            "statements": [
-                {
-                    "id": "Value",
-                    "type": "empty",
-                    "value": "empty",
-                    "line": 5
-                }
-            ],
-            "line": 6
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "print",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "title" : "text",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "line" : 3,
+          "type" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Empty",
+            "line" : 5,
+            "type" : null
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         }
-    ],
-    "line": 6
+      }
+    } ] ]
+  }
 }

@@ -11,4 +11,4 @@ end;
 
 declare n = 0;
 
-n = exec power (a=6, n=5);
+n = exec power (6, 5);

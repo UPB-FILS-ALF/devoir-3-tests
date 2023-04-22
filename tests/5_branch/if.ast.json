@@ -1,65 +1,93 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "integer",
-                    "title": "n",
-                    "line": 3
-                }
-            ],
-            "line": 3
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 3,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 3,
+        "title" : "n",
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
         },
-        {
-            "id": "IfBranch",
-            "exp": {
-                "id": "Expression",
-                "op": ">",
-                "left": {
-                    "id": "Variable",
-                    "title": "n",
-                    "line": 5
-                },
-                "right": {
-                    "id": "Value",
-                    "type": "integer",
-                    "value": 2,
-                    "line": 5
-                },
-                "line": 5
+        "initial" : null
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.IfClause",
+      "line" : 5,
+      "expression" : {
+        "@class" : "org.easycompiler.ast.BinaryExpression",
+        "line" : 5,
+        "type" : null,
+        "left" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 5,
+          "type" : null,
+          "title" : "n"
+        },
+        "right" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "2"
+        },
+        "op" : "GT"
+      },
+      "thn" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 5,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Assignment",
+          "line" : 6,
+          "to" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 6,
+            "type" : null,
+            "title" : "n"
+          },
+          "from" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 6,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 6,
+              "type" : null,
+              "title" : "n"
             },
-            "then": [
-                {
-                    "id": "Assign",
-                    "to": {
-                        "id": "Variable",
-                        "title": "n",
-                        "line": 6
-                    },
-                    "from": {
-                        "id": "Expression",
-                        "op": "+",
-                        "left": {
-                            "id": "Variable",
-                            "title": "n",
-                            "line": 6
-                        },
-                        "right": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 1,
-                            "line": 6
-                        },
-                        "line": 6
-                    },
-                    "line": 6
-                }
-            ],
-            "line": 7
-        }
-    ],
-    "line": 7
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 6,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "1"
+            },
+            "op" : "ADD"
+          }
+        } ] ]
+      },
+      "els" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 5,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ ] ]
+      }
+    } ] ]
+  }
 }

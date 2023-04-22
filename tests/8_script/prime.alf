@@ -13,7 +13,7 @@ for i from 2 to exec _sqrt(n) start
 finish;
 
 if p != 0
-exec _write(text = n+" is prime"); 
+exec _write(n+" is prime");
 else 
-exec _write(text = n+" is not prime"); 
+exec _write(n+" is not prime");
 end;

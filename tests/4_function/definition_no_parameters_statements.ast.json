@@ -1,33 +1,54 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionDefinition",
-            "title": "say",
-            "parameters": [],
-            "return_type": "string",
-            "statements": [
-                {
-                    "id": "Value",
-                    "type": "string",
-                    "value": "say1",
-                    "line": 5
-                },
-                {
-                    "id": "Value",
-                    "type": "string",
-                    "value": "say2",
-                    "line": 6
-                },
-                {
-                    "id": "Value",
-                    "type": "string",
-                    "value": "say3",
-                    "line": 7
-                }
-            ],
-            "line": 8
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "say",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "title" : null,
+        "parameters" : [ "java.util.ArrayList", [ ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "line" : 3,
+          "type" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 5,
+            "type" : {
+              "@class" : "org.easycompiler.type.Str",
+              "title" : "string"
+            },
+            "value" : "say1"
+          }, {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 6,
+            "type" : {
+              "@class" : "org.easycompiler.type.Str",
+              "title" : "string"
+            },
+            "value" : "say2"
+          }, {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 7,
+            "type" : {
+              "@class" : "org.easycompiler.type.Str",
+              "title" : "string"
+            },
+            "value" : "say3"
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         }
-    ],
-    "line": 8
+      }
+    } ] ]
+  }
 }

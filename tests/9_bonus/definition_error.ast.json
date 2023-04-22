@@ -1,17 +1,17 @@
 {
-    "id": "Errors",
-    "errors": [
-        {
-            "id": "Syntax Error",
-            "line": 2,
-            "position": 17,
-            "message": "no viable alternative at input 'variable<'"
-        },
-        {
-            "id": "Syntax Error",
-            "line": 2,
-            "position": 17,
-            "message": "mismatched input '<' expecting {<EOF>, NEWLINE, FUNCTION, 'empty', 'declare', 'exec', 'class', 'integer', 'float', 'string', 'boolean', 'for', 'repeat', 'while', BOOL_VALUE, 'if', '(', ';', '!', INT_NUMBER, FLOAT_NUMBER, VARIABLE, SYMBOL, STRING_TEXT}"
-        }
-    ]
+  "@class" : "org.easycompiler.ast.Errors",
+  "line" : 0,
+  "errorList" : [ "java.util.ArrayList", [ {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 2,
+    "id" : "Syntax Error",
+    "charPosition" : 17,
+    "msg" : "no viable alternative at input 'variable<'"
+  }, {
+    "@class" : "org.easycompiler.ast.Error",
+    "line" : 2,
+    "id" : "Syntax Error",
+    "charPosition" : 26,
+    "msg" : "mismatched input ';' expecting 'array'"
+  } ] ]
 }

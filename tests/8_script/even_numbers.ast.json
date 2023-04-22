@@ -1,200 +1,324 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "auto",
-                    "title": "n",
-                    "value": {
-                        "id": "Value",
-                        "type": "integer",
-                        "value": 2,
-                        "line": 3
-                    },
-                    "line": 3
-                }
-            ],
-            "line": 3
-        },
-        {
-            "id": "ForLoop",
-            "variable": "n",
-            "from": {
-                "id": "Value",
-                "type": "integer",
-                "value": 2,
-                "line": 5
-            },
-            "to": {
-                "id": "Value",
-                "type": "integer",
-                "value": 1000,
-                "line": 5
-            },
-            "statements": [
-                {
-                    "id": "FunctionCall",
-                    "function_name": "_write",
-                    "parameters": [
-                        {
-                            "id": "FunctionCallParameter",
-                            "name": "text",
-                            "value": {
-                                "id": "Variable",
-                                "title": "n",
-                                "line": 6
-                            }
-                        }
-                    ],
-                    "line": 6
-                }
-            ],
-            "line": 7
-        },
-        {
-            "id": "WhileLoop",
-            "exp": {
-                "id": "Expression",
-                "op": "<",
-                "left": {
-                    "id": "Variable",
-                    "title": "n",
-                    "line": 9
-                },
-                "right": {
-                    "id": "Value",
-                    "type": "integer",
-                    "value": 1000,
-                    "line": 9
-                },
-                "line": 9
-            },
-            "statements": [
-                {
-                    "id": "FunctionCall",
-                    "function_name": "_write",
-                    "parameters": [
-                        {
-                            "id": "FunctionCallParameter",
-                            "name": "text",
-                            "value": {
-                                "id": "Variable",
-                                "title": "n",
-                                "line": 10
-                            }
-                        }
-                    ],
-                    "line": 10
-                },
-                {
-                    "id": "Assign",
-                    "to": {
-                        "id": "Variable",
-                        "title": "n",
-                        "line": 11
-                    },
-                    "from": {
-                        "id": "Expression",
-                        "op": "+",
-                        "left": {
-                            "id": "Variable",
-                            "title": "n",
-                            "line": 11
-                        },
-                        "right": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 2,
-                            "line": 11
-                        },
-                        "line": 11
-                    },
-                    "line": 11
-                }
-            ],
-            "line": 12
-        },
-        {
-            "id": "Assign",
-            "to": {
-                "id": "Variable",
-                "title": "n",
-                "line": 14
-            },
-            "from": {
-                "id": "Value",
-                "type": "integer",
-                "value": 2,
-                "line": 14
-            },
-            "line": 14
-        },
-        {
-            "id": "RepeatLoop",
-            "exp": {
-                "id": "Expression",
-                "op": "<",
-                "left": {
-                    "id": "Variable",
-                    "title": "n",
-                    "line": 19
-                },
-                "right": {
-                    "id": "Value",
-                    "type": "integer",
-                    "value": 1000,
-                    "line": 19
-                },
-                "line": 19
-            },
-            "statements": [
-                {
-                    "id": "FunctionCall",
-                    "function_name": "_write",
-                    "parameters": [
-                        {
-                            "id": "FunctionCallParameter",
-                            "name": "text",
-                            "value": {
-                                "id": "Variable",
-                                "title": "n",
-                                "line": 17
-                            }
-                        }
-                    ],
-                    "line": 17
-                },
-                {
-                    "id": "Assign",
-                    "to": {
-                        "id": "Variable",
-                        "title": "n",
-                        "line": 18
-                    },
-                    "from": {
-                        "id": "Expression",
-                        "op": "+",
-                        "left": {
-                            "id": "Variable",
-                            "title": "n",
-                            "line": 18
-                        },
-                        "right": {
-                            "id": "Value",
-                            "type": "integer",
-                            "value": 2,
-                            "line": 18
-                        },
-                        "line": 18
-                    },
-                    "line": 18
-                }
-            ],
-            "line": 19
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 3,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 3,
+        "title" : "n",
+        "type" : null,
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "2"
         }
-    ],
-    "line": 19
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Loop",
+      "line" : 5,
+      "type" : null,
+      "init" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 5,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Assignment",
+          "line" : 5,
+          "to" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 5,
+            "type" : null,
+            "title" : "n"
+          },
+          "from" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 5,
+            "type" : {
+              "@class" : "org.easycompiler.type.Integer",
+              "title" : "integer",
+              "type" : "I64"
+            },
+            "value" : "2"
+          }
+        } ] ]
+      },
+      "condition" : {
+        "@class" : "org.easycompiler.ast.BinaryExpression",
+        "line" : 5,
+        "type" : null,
+        "left" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 5,
+          "type" : null,
+          "title" : "n"
+        },
+        "right" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "1000"
+        },
+        "op" : "LT"
+      },
+      "steps" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 5,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Assignment",
+          "line" : 5,
+          "to" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 5,
+            "type" : null,
+            "title" : "n"
+          },
+          "from" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 5,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 5,
+              "type" : null,
+              "title" : "n"
+            },
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 5,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "1"
+            },
+            "op" : "ADD"
+          }
+        } ] ]
+      },
+      "statements" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 5,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.FunctionCall",
+          "line" : 6,
+          "type" : null,
+          "function_name" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 6,
+            "type" : null,
+            "title" : "_write"
+          },
+          "arguments" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 6,
+            "type" : null,
+            "title" : "n"
+          } ] ]
+        } ] ]
+      },
+      "evaluation" : "BEFORE"
+    }, {
+      "@class" : "org.easycompiler.ast.Loop",
+      "line" : 9,
+      "type" : null,
+      "init" : null,
+      "condition" : {
+        "@class" : "org.easycompiler.ast.BinaryExpression",
+        "line" : 9,
+        "type" : null,
+        "left" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 9,
+          "type" : null,
+          "title" : "n"
+        },
+        "right" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 9,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "1000"
+        },
+        "op" : "LT"
+      },
+      "steps" : null,
+      "statements" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 9,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.FunctionCall",
+          "line" : 10,
+          "type" : null,
+          "function_name" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 10,
+            "type" : null,
+            "title" : "_write"
+          },
+          "arguments" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 10,
+            "type" : null,
+            "title" : "n"
+          } ] ]
+        }, {
+          "@class" : "org.easycompiler.ast.Assignment",
+          "line" : 11,
+          "to" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 11,
+            "type" : null,
+            "title" : "n"
+          },
+          "from" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 11,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 11,
+              "type" : null,
+              "title" : "n"
+            },
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 11,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "2"
+            },
+            "op" : "ADD"
+          }
+        } ] ]
+      },
+      "evaluation" : "BEFORE"
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "line" : 14,
+      "to" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "line" : 14,
+        "type" : null,
+        "title" : "n"
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "line" : 14,
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
+        },
+        "value" : "2"
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Loop",
+      "line" : 16,
+      "type" : null,
+      "init" : null,
+      "condition" : {
+        "@class" : "org.easycompiler.ast.BinaryExpression",
+        "line" : 19,
+        "type" : null,
+        "left" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 19,
+          "type" : null,
+          "title" : "n"
+        },
+        "right" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 19,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "1000"
+        },
+        "op" : "LT"
+      },
+      "steps" : null,
+      "statements" : {
+        "@class" : "org.easycompiler.ast.Block",
+        "line" : 16,
+        "type" : null,
+        "statements" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.FunctionCall",
+          "line" : 17,
+          "type" : null,
+          "function_name" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 17,
+            "type" : null,
+            "title" : "_write"
+          },
+          "arguments" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 17,
+            "type" : null,
+            "title" : "n"
+          } ] ]
+        }, {
+          "@class" : "org.easycompiler.ast.Assignment",
+          "line" : 18,
+          "to" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "line" : 18,
+            "type" : null,
+            "title" : "n"
+          },
+          "from" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 18,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "line" : 18,
+              "type" : null,
+              "title" : "n"
+            },
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 18,
+              "type" : {
+                "@class" : "org.easycompiler.type.Integer",
+                "title" : "integer",
+                "type" : "I64"
+              },
+              "value" : "2"
+            },
+            "op" : "ADD"
+          }
+        } ] ]
+      },
+      "evaluation" : "AFTER"
+    } ] ]
+  }
 }

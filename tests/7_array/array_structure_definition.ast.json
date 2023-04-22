@@ -1,51 +1,74 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "ClassDefinition",
-            "title": "school",
-            "properties": [
-                {
-                    "id": "LocalProperty",
-                    "type": "string",
-                    "title": "name",
-                    "line": 4
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "boolean",
-                    "title": "private",
-                    "line": 5
-                },
-                {
-                    "id": "LocalProperty",
-                    "type": "integer",
-                    "title": "type",
-                    "line": 6
-                }
-            ],
-            "line": 7
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 3,
+      "title" : "school",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 4,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "title" : "name",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 5,
+          "type" : {
+            "@class" : "org.easycompiler.type.Boolean",
+            "title" : "boolean"
+          },
+          "title" : "private",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "line" : 6,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "title" : "type",
+          "value" : null
+        } ] ]
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Definition",
+      "line" : 9,
+      "title" : "school_array",
+      "type" : {
+        "@class" : "org.easycompiler.type.Array",
+        "title" : null,
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "title" : "school"
         },
-        {
-            "id": "Array",
-            "title": "school_array",
-            "element_type": "school",
-            "from": "1",
-            "to": "9",
-            "line": 9
+        "length" : 8
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 11,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 11,
+        "title" : "school_array",
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "title" : "list_of_schools"
         },
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "list_of_schools",
-                    "title": "school_array",
-                    "line": 11
-                }
-            ],
-            "line": 11
-        }
-    ],
-    "line": 11
+        "initial" : null
+      } ] ]
+    } ] ]
+  }
 }

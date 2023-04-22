@@ -1,88 +1,110 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "FunctionCall",
-            "function_name": "_print",
-            "parameters": [
-                {
-                    "id": "FunctionCallParameter",
-                    "name": "text",
-                    "value": {
-                        "id": "Expression",
-                        "op": "+",
-                        "left": {
-                            "id": "Expression",
-                            "op": "+",
-                            "left": {
-                                "id": "Expression",
-                                "op": "+",
-                                "left": {
-                                    "id": "Expression",
-                                    "op": "+",
-                                    "left": {
-                                        "id": "Value",
-                                        "type": "string",
-                                        "value": "text",
-                                        "line": 3
-                                    },
-                                    "right": {
-                                        "id": "Value",
-                                        "type": "symbol",
-                                        "value": " ",
-                                        "line": 3
-                                    },
-                                    "line": 3
-                                },
-                                "right": {
-                                    "id": "Value",
-                                    "type": "string",
-                                    "value": "to",
-                                    "line": 3
-                                },
-                                "line": 3
-                            },
-                            "right": {
-                                "id": "Value",
-                                "type": "symbol",
-                                "value": " ",
-                                "line": 3
-                            },
-                            "line": 3
-                        },
-                        "right": {
-                            "id": "Value",
-                            "type": "string",
-                            "value": "write",
-                            "line": 3
-                        },
-                        "line": 3
-                    }
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 3,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.FunctionCall",
+      "line" : 3,
+      "type" : null,
+      "function_name" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "line" : 3,
+        "type" : null,
+        "title" : "_print"
+      },
+      "arguments" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.BinaryExpression",
+        "line" : 3,
+        "type" : null,
+        "left" : {
+          "@class" : "org.easycompiler.ast.BinaryExpression",
+          "line" : 3,
+          "type" : null,
+          "left" : {
+            "@class" : "org.easycompiler.ast.BinaryExpression",
+            "line" : 3,
+            "type" : null,
+            "left" : {
+              "@class" : "org.easycompiler.ast.BinaryExpression",
+              "line" : 3,
+              "type" : null,
+              "left" : {
+                "@class" : "org.easycompiler.ast.Value",
+                "line" : 3,
+                "type" : {
+                  "@class" : "org.easycompiler.type.Str",
+                  "title" : "string"
                 },
-                {
-                    "id": "FunctionCallParameter",
-                    "name": "number",
-                    "value": {
-                        "id": "FunctionCall",
-                        "function_name": "math",
-                        "parameters": [
-                            {
-                                "id": "FunctionCallParameter",
-                                "name": "a",
-                                "value": {
-                                    "id": "Value",
-                                    "type": "integer",
-                                    "value": 47821,
-                                    "line": 3
-                                }
-                            }
-                        ],
-                        "line": 3
-                    }
-                }
-            ],
-            "line": 3
-        }
-    ],
-    "line": 3
+                "value" : "text"
+              },
+              "right" : {
+                "@class" : "org.easycompiler.ast.Value",
+                "line" : 3,
+                "type" : {
+                  "@class" : "org.easycompiler.type.Str",
+                  "title" : "string"
+                },
+                "value" : " "
+              },
+              "op" : "ADD"
+            },
+            "right" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "line" : 3,
+              "type" : {
+                "@class" : "org.easycompiler.type.Str",
+                "title" : "string"
+              },
+              "value" : "to"
+            },
+            "op" : "ADD"
+          },
+          "right" : {
+            "@class" : "org.easycompiler.ast.Value",
+            "line" : 3,
+            "type" : {
+              "@class" : "org.easycompiler.type.Str",
+              "title" : "string"
+            },
+            "value" : " "
+          },
+          "op" : "ADD"
+        },
+        "right" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "value" : "write"
+        },
+        "op" : "ADD"
+      }, {
+        "@class" : "org.easycompiler.ast.FunctionCall",
+        "line" : 3,
+        "type" : null,
+        "function_name" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "line" : 3,
+          "type" : null,
+          "title" : "math"
+        },
+        "arguments" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 3,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "47821"
+        } ] ]
+      } ] ]
+    } ] ]
+  }
 }

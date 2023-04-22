@@ -1,60 +1,87 @@
 {
-    "id": "Statements",
-    "statements": [
-        {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "integer",
-                    "title": "n",
-                    "value": {
-                        "id": "Value",
-                        "type": "integer",
-                        "value": 3,
-                        "line": 2
-                    },
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "float",
-                    "title": "r",
-                    "value": {
-                        "id": "Value",
-                        "type": "float",
-                        "value": 3.7,
-                        "line": 2
-                    },
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "boolean",
-                    "title": "l",
-                    "value": {
-                        "id": "Value",
-                        "type": "boolean",
-                        "value": false,
-                        "line": 2
-                    },
-                    "line": 2
-                },
-                {
-                    "id": "DeclarationElement",
-                    "type": "string",
-                    "title": "s",
-                    "value": {
-                        "id": "Value",
-                        "type": "string",
-                        "value": "string",
-                        "line": 2
-                    },
-                    "line": 2
-                }
-            ],
-            "line": 2
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 2,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "line" : 2,
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "line" : 2,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "n",
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "title" : "integer",
+          "type" : "I64"
+        },
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 2,
+          "type" : {
+            "@class" : "org.easycompiler.type.Integer",
+            "title" : "integer",
+            "type" : "I64"
+          },
+          "value" : "3"
         }
-    ],
-    "line": 2
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "r",
+        "type" : {
+          "@class" : "org.easycompiler.type.Float",
+          "title" : "float",
+          "type" : "F64"
+        },
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 2,
+          "type" : {
+            "@class" : "org.easycompiler.type.Float",
+            "title" : "float",
+            "type" : "F64"
+          },
+          "value" : "3.7"
+        }
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "l",
+        "type" : {
+          "@class" : "org.easycompiler.type.Boolean",
+          "title" : "boolean"
+        },
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 2,
+          "type" : {
+            "@class" : "org.easycompiler.type.Boolean",
+            "title" : "boolean"
+          },
+          "value" : "false"
+        }
+      }, {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "line" : 2,
+        "title" : "s",
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
+        },
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "line" : 2,
+          "type" : {
+            "@class" : "org.easycompiler.type.Str",
+            "title" : "string"
+          },
+          "value" : "string"
+        }
+      } ] ]
+    } ] ]
+  }
 }
