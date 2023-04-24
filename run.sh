@@ -12,7 +12,6 @@ function run_test {
     astoutputname="$(dirname $filename)/$(basename $1 .alf).ast.json"
     echo Running $filename
     java -cp ./../libs/*:./../out org.example.Main $filename output.ast.json &> $outputname
-#    node $dir/../index.js $filename output.ast.json &> $outputname
     ERROR=0
 
     if node verify.js "$astoutputname" "output.ast.json" &> output.report;
@@ -21,7 +20,7 @@ function run_test {
     else
         cat $outputname
         cat output.report
-        echo "This is informative. The order of the properties doesn't matter."
+        echo "This is informative. The order of the properties in the JSON doesn't matter."
         echo "Your output                                                   | Correct output"
         diff --ignore-space-change --side-by-side --suppress-common-lines "output.ast.json" "$astoutputname"
         ERROR=1
