@@ -59,7 +59,7 @@
       "steps" : null,
       "statements" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 5,
+        "line" : 6,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.Assignment",

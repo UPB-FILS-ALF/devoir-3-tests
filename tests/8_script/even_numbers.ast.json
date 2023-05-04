@@ -115,7 +115,7 @@
       },
       "statements" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 5,
+        "line" : 6,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.FunctionCall",
@@ -166,7 +166,7 @@
       "steps" : null,
       "statements" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 9,
+        "line" : 10,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.FunctionCall",
@@ -267,7 +267,7 @@
       "steps" : null,
       "statements" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 16,
+        "line" : 17,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.FunctionCall",

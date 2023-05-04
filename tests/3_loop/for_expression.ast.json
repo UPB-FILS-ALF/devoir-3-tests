@@ -99,7 +99,7 @@
       },
       "statements" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 7,
+        "line" : 8,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.Assignment",

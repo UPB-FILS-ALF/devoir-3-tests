@@ -1,30 +1,30 @@
 {
-    "@class" : "org.easycompiler.ast.Module",
+  "@class" : "org.easycompiler.ast.Module",
+  "line" : 3,
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
     "line" : 3,
-    "title" : "program",
-    "block" : {
-      "@class" : "org.easycompiler.ast.Block",
+    "type" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.FunctionCall",
       "line" : 3,
       "type" : null,
-      "statements" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.ast.FunctionCall",
+      "function_name" : {
+        "@class" : "org.easycompiler.ast.Identifier",
         "line" : 3,
         "type" : null,
-        "function_name" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "line" : 3,
-          "type" : null,
-          "title" : "print"
+        "title" : "print"
+      },
+      "arguments" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.Value",
+        "line" : 3,
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "title" : "string"
         },
-        "arguments" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Value",
-          "line" : 3,
-          "type" : {
-            "@class" : "org.easycompiler.type.Str",
-            "title" : "string"
-          },
-          "value" : "text to write"
-        } ] ]
+        "value" : "text to write"
       } ] ]
-    }
+    } ] ]
   }
+}

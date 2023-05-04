@@ -25,7 +25,7 @@
         } ] ],
         "statements" : {
           "@class" : "org.easycompiler.ast.Block",
-          "line" : 3,
+          "line" : 4,
           "type" : null,
           "statements" : [ "java.util.ArrayList", [ {
             "@class" : "org.easycompiler.ast.Empty",

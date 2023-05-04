@@ -26,7 +26,7 @@
         } ] ],
         "statements" : {
           "@class" : "org.easycompiler.ast.Block",
-          "line" : 3,
+          "line" : 4,
           "type" : null,
           "statements" : [ "java.util.ArrayList", [ {
             "@class" : "org.easycompiler.ast.Group",
@@ -146,7 +146,7 @@
             },
             "statements" : {
               "@class" : "org.easycompiler.ast.Block",
-              "line" : 7,
+              "line" : 8,
               "type" : null,
               "statements" : [ "java.util.ArrayList", [ {
                 "@class" : "org.easycompiler.ast.IfClause",
@@ -187,7 +187,7 @@
                 },
                 "thn" : {
                   "@class" : "org.easycompiler.ast.Block",
-                  "line" : 8,
+                  "line" : 9,
                   "type" : null,
                   "statements" : [ "java.util.ArrayList", [ {
                     "@class" : "org.easycompiler.ast.Assignment",
@@ -291,7 +291,7 @@
       },
       "thn" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 20,
+        "line" : 21,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.FunctionCall",
@@ -328,7 +328,7 @@
       },
       "els" : {
         "@class" : "org.easycompiler.ast.Block",
-        "line" : 20,
+        "line" : 23,
         "type" : null,
         "statements" : [ "java.util.ArrayList", [ {
           "@class" : "org.easycompiler.ast.FunctionCall",
